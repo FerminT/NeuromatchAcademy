@@ -52,7 +52,7 @@ rMSE for running model on stationary data: 0.794 radians
 
 The **error rate increases roughly by 20%**. This suggests the data follow different distributions for each group. It is important to note that this difference can not be explained by the mouse's head movements while running, for it was fixed at all times during the experiments.
 
-We then trained a **classifier** based on these results, which receives as input the neural activity of a given trial and as output it predicts if the mouse was running or not: it achieved **~90% accuracy**.
+We then trained a **deep classifier** based on these results, which receives as input the neural activity of a given trial and as output it predicts if the mouse was running or not: it achieved **~90% accuracy**.
 
 ### 3D CNN
 ![3D_CNN](https://i.postimg.cc/V6cBRwyS/3D-CNN.png)
