@@ -23,12 +23,14 @@ With regard to the spatial information, we build a 3D cube, where each cell cont
 The closer the points are to the diagonal, the better the performance.
 ### Linear regression
 ![Linear_regr](https://i.postimg.cc/8c5MGqGn/Linear-regression.png)
+
 rMSE for stationary model on stationary testing data: 0.783 radians
 
 rMSE for running model on running testing data: 0.764 radians
 
 ### Multi-layer perceptron
 ![MLP](https://i.postimg.cc/nrGFdLgy/MLP.png)
+
 rMSE for stationary model on stationary testing data: 0.543 radians
 
 rMSE for running model on running testing data: 0.627 radians
@@ -36,12 +38,14 @@ rMSE for running model on running testing data: 0.627 radians
 ### Switching the input: running model on stationary data and viceversa
 ### Linear regression
 ![Linear_regr_switched](https://i.postimg.cc/G38v69QW/Linear-regression-switched.png)
+
 rMSE for stationary model on running data: 0.875 radians
 
 rMSE for running model on stationary data: 1.024 radians
 
 ### Multi-layer perceptron
 ![MLP_switched](https://i.postimg.cc/6p3ZL3yb/MLP-switched.png)
+
 rMSE for stationary model on running data: 0.875 radians
 
 rMSE for running model on stationary data: 0.794 radians
@@ -52,11 +56,13 @@ We then trained a **classifier** based on these results, which receives as input
 
 ### 3D CNN
 ![3D_CNN](https://i.postimg.cc/V6cBRwyS/3D-CNN.png)
+
 rMSE on testing data: 0.681 radians
 
 To test if the spatial information was adding something to the predictions, we **shuffled the grid** to see how much the performance varied.
 
 ![3D_CNN_shuffled](https://i.postimg.cc/NjcHS4JV/3-D-CNN-shuffled.png)
+
 rMSE on testing data: 0.593 radians
 
 Not only did the **performance** not get worse, but it actually **improved**. As surprising as this is, it is actually consistent with previous results where shuffling the data improved the decoder's results.
